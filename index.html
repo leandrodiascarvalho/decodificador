@@ -11,34 +11,77 @@
 </head>
 
 <body>
-  <div>
+  <header>
+    <h1 class="titulo"><a href="#"> Alura Cursos</a></h1>
     <img src="./assets/img/alura.svg">
-  </div>
-  <h1 class="titulo">Código Secreto</h1>
-  <!--conteúdo principal dentro do <body>-->
-  <main class="main">
-    <!--marcação das seções de conteúdo da página-->
+  </header>
+
+  <!--Input para entrada de texto -->
+  <main>
     <section class="form box">
-      <form action="">
-        <label for="input-texto"><img src="./assets/img/exclamacao.svg"> letras minúsculas, sem acento</label>
+      <form id="form-entrada">
+        <p class="titulo2">Digite sua mensagem</p>
+        <br>
+        <textarea contenteditable="auto" class="text-input" type="text" id="inputTexto"
+          placeholder="Insira o texto aqui"></textarea>
 
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
-
-        <input class="btn" type="submit" value="criptografar" id="btn-cripto">
-
-        <input class="btn" type="submit" value="descriptografar" id="btn-descripto">
-
-        <h2 id="">Mensagem Criptografada</h2>
-
-        <input class="text-input" type="text" id="msg">
-
-        <input class="btn" type="submit" value="copiar" id="btn-copy">
-
+        <!-- Botão criptografar/descriptografar texto-->
+        <button id="btn-cripto" class="botaoCriptografar" onclick="return false">Criptografar</button>
+        <button id="btn-descripto" class="botaoDescriptografar" onclick="return false">Descriptografar</button>
       </form>
     </section>
+    <section class="msg box">
+      <p class="titulo2">Mensagem Criptografada</p>
+      <br>
+      <textarea contenteditable="auto" class="text-input" type="textarea" id="msg"
+        placeholder="Seu texto Codificado"></textarea>
+      <input class="botaoCopiar" type="submit" value="copiar" id="btn-copy">
+    </section>
+    <section id="intro">
+      <img id="img" src="./assets/img/High quality products 1 1.svg" alt="">
+      <br>
+      <br>
+      <h3>Dicas</h3>
+      <br>
+      <hr>
+    </section>
 
-  </main>
 </body>
-<script src="./assets/js/script.js"></script>
+<div class="criptografo">
+  <h4>Criptografar</h4>
+  <br>
+  <dl>
+    <dt>
+      <p>Escreva o texto no campo indicado </p>
+    </dt>
+    <dt>
+      <p>Click em <strong>Criptografar </strong></p>
+    </dt>
+    <dt>
+      <p>Agora você pode copiar seu texto e compartilhar com seus amigos.</p>
+    </dt>
+    <dt>
+      <p><span>NÃO SÃO PERMITIDOS LETRAS MAIÚSCULAS, NÚMEROS E CARACTERES ESPECIAIS.</span></p>
+    </dt>
+    </ul>
+</div>
+<footer class="rodape">
+  <section id="botao-cont"></section>
+  <br>
+  <h4 class="desenvolvedor">Leandro Dias de Carvalho</h4>
+  <br>
+  <a href="https://www.linkedin.com/in/leandrodiascarvalho/" target="_blank">
+    <img
+      src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white"
+      target="_blank">
+  </a>
+  <a href="https://github.com/leandrodiascarvalho" target="_blank">
+    <img src="	https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+      target="_blank">
+  </a>
+  </section>
+</footer>
+
+<script type="text/javascript" src="./assets/js/script.js"></script>
 
 </html>
