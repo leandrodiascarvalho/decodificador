@@ -22,19 +22,20 @@
       <form id="form-entrada">
         <p class="titulo2">Digite sua mensagem</p>
         <br>
-        <textarea contenteditable="auto" class="text-input" type="text" id="inputTexto"
-          placeholder="Insira o texto aqui"></textarea>
+        <textarea contenteditable="auto" class="text-input" type="text" name="inputTexto" id="inputTexto"
+          placeholder="Insira o texto aqui" autocomplete="off"></textarea>
 
         <!-- Botão criptografar/descriptografar texto-->
-        <button id="btn-cripto" class="botaoCriptografar" onclick="return false">Criptografar</button>
-        <button id="btn-descripto" class="botaoDescriptografar" onclick="return false">Descriptografar</button>
+        <button id="btn-cripto" class="botaoCriptografar">Criptografar</button>
+        <button id="btn-descripto" class="botaoDescriptografar">Descriptografar</button>
       </form>
     </section>
-    <section class="msg box">
+    <section class ="msg box">
       <p class="titulo2">Mensagem Criptografada</p>
       <br>
       <textarea contenteditable="auto" class="text-input" type="textarea" id="msg"
         placeholder="Seu texto Codificado"></textarea>
+
       <input class="botaoCopiar" type="submit" value="copiar" id="btn-copy">
     </section>
     <section id="intro">
@@ -82,6 +83,7 @@
   </section>
 </footer>
 
-<script type="text/javascript" src="./assets/js/script.js"></script>
+<script src="./assets/js/main.js"></script>
+
 
 </html>
